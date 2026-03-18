@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Class 8</title>
+        {% include "headers.njk" %}
+    </head>
+    <body>
+        {% include "nav.njk" %}
+        <p>This is my home page</p>
+        <div class="all-content">
+            {% for post in dataToBeSent %}
+                <div class="single-post">
+                    <span>
+                        {{ post.date }}
+                    </span>
+                    <a href="/post/{{ post._id }}">
+                    <img src='{{ post.filepath }}'> </a>
+                    <p>
+                        {{ post.dataCaption }}</p>
+                </div>
+            {% endfor %}
+        </body>
+    </body>
+</html></body></html>

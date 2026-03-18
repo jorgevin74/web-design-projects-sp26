@@ -1,0 +1,41 @@
+body{
+    background-color: azure;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+nav > a:visited, nav > a{
+    color:black;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.single-post{
+    width: 60%;
+}
+
+.single-post > img{
+    width: 50%;
+    object-fit: cover;
+}
+
+.single-post > span{
+    display: block;
+    font-size: 16px;
+    /* this is from variable weight of goolge fonts */
+    font-weight: 200;
+}
